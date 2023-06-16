@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid black; */
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f2f2f2;
+    padding: 0 5rem;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0rem;
+}
+.Navbar .nav-list{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    margin: 0 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.nav-item a:hover{
+    /* border-bottom: 1px solid #BEEC4E; */
+    transition: .2s ease;
+    text-shadow: 4px 4px 5px #BEEC4E;
+}
+
+/* Hero-Section */
+section{
+    margin: 2rem 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+.hero-img{
+  width: 500px;
+  height: 500px;
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+}
+.hero-text1{
+    font-size: 30px;
+}
+.hero-text2, .hero-text3{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.hero-text2{
+    margin-bottom: -1rem;
+}
+.hero-text4{
+    padding: .5rem 0;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+}
+.hero-btn .btn{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    margin: 1rem;
+}
+.hero-btn .btn:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+}
+.hero-btn .btn-more{
+    background-color: #BEEC4E;
+}
+
+/* Services */
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-tag{
+    border-bottom: 2px solid #BEEC4E;
+}
+.service-title{
+    margin: 1rem 0;
+}
+.services-container{
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.service{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #BEEC4E;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.service-img{
+    width: 100px;
+    height: 100px;
+}
+.service .tool-info{
+    font-size: 12px;
+}
+/* About Us */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.about-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-container .about-img{
+    width: 500px;
+    height: 500px;
+}
+.about-text{
+    width: 40%;
+}
+
+/* Contact Us */
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* padding-top: 4rem; */
+}
+.contact-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+.contact-container #email{
+    padding-left: 1rem;   
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    border-radius: 20px;
+}
+.contact-container .email .contact-btn{
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    margin: 1rem 0;
+    background-color: #BEEC4E;
+    cursor: pointer;
+}
+
+/* Footer */
+footer{
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid grey;
+
+}
+footer .f-text1{
+    font-weight: 500;
+}
+footer .f-text1 a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 5px #BEEC4E;
+}
+
+
+
+/* Code of Responsiveness */
+
+@media(max-width:768px){
+    body{
+        padding: 0 2rem;
+    }
+    /* Hero Section */
+    .hero-img{
+        width: 400px;
+        height: 400px;
+    }
+    /* About Section */
+    .about-container .about-img{
+        width: 400px;
+        height: 400px;
+    }
+    .about-container .about-text1{
+        font-size: 12px;
+    }
+    /* Contact Section */
+    .contact-container .contact-img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(max-width:425px){
+    body{
+        padding: 0;
+    }
+    .Navbar .nav-list{
+        display: none;
+    }
+    /* Hero Section */
+    .hero-img, .about-container .about-img, .contact-container .contact-img{
+        display: none;
+    }
+    .hero{
+    display: grid;
+    grid-template-columns:100%;
+    justify-items: center;
+    align-items: center;
+    }
+    .hero-text1{
+        font-size: 21px;
+    }
+    .hero-text2, .hero-text3{
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+    .hero-text4{
+        font-size: 12px;
+    }
+    /* Service Section */
+    #services .service-title{
+        font-size: 16px;
+    }
+    .services-container{
+        padding: 2rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    /* About Section */
+    #about{
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-text{
+        width: 80%;
+    }
+    /* Contact Section */
+    #contact{
+        gap: 1rem;
+        padding-top: 3rem;
+    }
+    .contact-container{
+        grid-template-columns: 100%;
+    }
+    /* Footer Section */
+    footer .f-text1{
+        font-size: 12px;
+    }
+    footer .f-text2{
+        font-size: 12px;
+    }
+    .contact-container .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width:320px){
+    /* About Section */
+    .about-text{
+    width: 90%;
+}
+    .about-head{
+        font-size: 20px;
+    }
+    .contact-container #email{
+        width: 18rem;
+    }
+}
