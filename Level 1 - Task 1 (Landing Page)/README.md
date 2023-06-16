@@ -1,4 +1,4 @@
-This is Task 1 of Level 1.  
+Task 1 of Level 1.  
 Digital Marketing Landing Page.  
 Desktop / Mobile
 
