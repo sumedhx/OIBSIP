@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grandiflora One', serif;
+    font-weight: 200;
+
+    /* border: 1px solid black; */
+}
+
+html {
+    overflow-x: hidden;
+    padding: 0 2rem;
+}
+
+body {
+    background-color: #f1f4f9;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+header .logo {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+#logo h1 {
+    font-size: 40px;
+}
+
+#logo .dot {
+    color: orange;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header,
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-item {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    text-shadow: 2px 2px 5px #7CE5FD;
+}
+
+.toggle {
+    display: none;
+}
+
+section {
+    padding: 4rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* --- Hero Section --- */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.hero-t1 {
+    font-size: 3rem;
+}
+
+.hero-t2 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #6AAFCA;
+    font-family: 'Sacramento', cursive;
+}
+
+.hero-t3 {
+    margin-top: -2rem;
+    width: 70%;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img .pic {
+    border-radius: 400px;
+}
+
+.hero-img .pic {
+    width: 400px;
+    height: 400px;
+}
+
+.hero-img .pic-frame {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    border-radius: 400px;
+    background-color: transparent;
+    box-shadow: 0 0 20px 5px white inset;
+}
+
+.gradient-img2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    filter: blur(20px);
+    position: absolute;
+    top: 0;
+    right: -40px;
+    z-index: -1;
+}
+
+.gradient-img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    filter: blur(20px);
+    position: absolute;
+    bottom: 0;
+    left: -40px;
+    z-index: -1;
+}
+
+/* About Section */
+.section-tag {
+    margin-bottom: 4rem;
+    text-shadow: 2px 2px 5px #7CE5FD;
+}
+
+.about {
+    flex-direction: column;
+}
+
+.about-area {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* box-shadow: 0 0 5px #6AAFCA; */
+    border-radius: 10px;
+}
+
+.about-area .about-left h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    /* color: #6AAFCA; */
+    color: white;
+    font-family: 'Sacramento', cursive;
+    /* border-bottom: 2px solid #6AAFCA; */
+}
+
+.about-area .about-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.about-left .about-img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    filter: blur(50px);
+
+}
+
+.about-text .info-list .info-line {
+    margin: 1rem 0;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.about-text .info-list .info-line h2 {
+    text-shadow: 2px 2px 5px #7CE5FD;
+}
+
+/* Project Section */
+.project {
+    flex-direction: column;
+}
+
+.card-container {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project .card {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 550px;
+    gap: 2rem;
+    /* box-shadow: 0 0 5px #6AAFCA; */
+    position: relative;
+}
+
+.project .project-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-text {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-left: 1px solid #6AAFCA;
+    border-radius: 5px;
+}
+
+.preview-icon i,
+.git-icon i {
+    margin-right: .5rem;
+}
+
+.card .project-gradient {
+    position: absolute;
+    /* left: 50%; */
+    left: -10px;
+    top: width/2;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+/* Contact Section */
+.contact{
+    flex-direction: column;
+}
+.contact-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media .smedia-list{
+    list-style: none;
+    height: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.smedia-list li{
+    margin: 1rem 0;
+    position: relative;
+}
+.smedia-list li i{
+    margin: 0 1rem;
+}
+.smedia-list li .icon-gradient{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    top: -10px;
+    left: 10px;
+    z-index: -1;
+    filter: blur(5px);
+}
+.smedia-list .smedia-name{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.smedia-list a:hover + .icon-gradient{
+    width: 40px;
+    height: 40px;
+    transition: .5s ease;
+}
+.contact-container .contact-text{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container .contact-text h1{
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    font-family: 'Sacramento', cursive;
+}
+.contact-container .contact-text .contact-img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    z-index: -1;
+    filter: blur(50px);
+}
+footer{
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid grey;
+
+}
+footer .f-text1{
+    font-weight: 500;
+}
+footer .f-text1 a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 2px 2px 5px #6AAFCA;
+}
+
+
+
+
+
+
+
+
+
+/* ----- Responsive Code ----- */
+
+/* For Toggle Menu */
+@media(max-width:425px) {
+    .toggle {
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: yellow;
+        opacity: .9;
+        width: 100%;
+        height: 100vh;
+        z-index: 99;
+
+        transform: translateX(100%);
+        transition: .5s ease-in;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        transition: .5s ease-in;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .toggle .fa-solid[name="close"] {
+        display: none;
+    }
+
+    .active .toggle .fa-solid[name="open"] {
+        display: none;
+    }
+
+    .active .toggle .fa-solid[name="close"] {
+        display: block;
+    }
+
+    .nav-list {
+        height: 60%;
+    }
+
+    .navbar .nav-list {
+        flex-direction: column;
+    }
+    .nav-item{
+        font-size: 24px;
+        text-shadow: 0 0 20px black;
+    }
+}
+
+@media(max-width:425px) {
+    html {
+        padding: 0;
+    }
+
+    section {
+        padding: 2rem .5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        padding: 2rem 3rem;
+        margin-bottom: 2rem;
+    }
+    #logo h1{
+        font-size: 2rem;
+    }
+
+    .hero-img .pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-img .pic-frame {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-img .gradient-img1,
+    .gradient-img2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-t3 {
+        font-size: 14px;
+    }
+
+    /* About Section */
+    .about-area {
+        flex-direction: column;
+    }
+
+    .about-area .info-list .info-line h2 {
+        font-size: 20px;
+    }
+
+    .about-area .about-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Project Section */
+    .project .card-container {
+        flex-direction: column;
+    }
+
+    .card-container .card {
+        width: 300px;
+        padding: 1rem 0;
+        flex-direction: column;
+        box-shadow: 0 0 5px #6AAFCA;
+        border-radius: 10px;
+    }
+
+    .card-container .card .project-img {
+        width: 270px;
+        /* height: 170px; */
+    }
+
+    .card .card-text {
+        border: none;
+    }
+
+    /* COntact Section */
+    .contact-container{
+        flex-direction: column-reverse;
+    }
+    .social-media .smedia-list{
+        height: auto;
+    }
+    .contact-container{
+        height: 300px;
+    }
+    .contact-container .contact-text .contact-img{
+        width: 200px;
+        height: 200px;
+    }
+}
