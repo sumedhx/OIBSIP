@@ -4,4 +4,4 @@ Desktop / Mobile
 
 #oasisinfobyte-intership
 
-![Task 3 IMG](https://github.com/sumedhx/OIBSIP/assets/72144790/9c0d8312-f660-4f5b-bd7c-e952727842f8)
+![Task 3 IMG](https://github.com/sumedhx/OIBSIP/assets/72144790/97849b28-573b-4367-a90e-4c3e7981b3af)
